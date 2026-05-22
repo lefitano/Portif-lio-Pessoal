@@ -1,0 +1,217 @@
+:root {
+  --gold: #f7a902;
+  --dark: #000000;
+  --dark-mid: #393320;
+  --gray-card: rgb(96, 92, 92);
+}
+
+body {
+  background-image: linear-gradient(to right, #000000f1, #373c3d, #485658, #7d7e7e);
+  color: var(--gold);
+  font-family: Arial, Helvetica, sans-serif;
+  min-height: 100vh;
+}
+
+.divider {
+  border-color: var(--gold);
+  opacity: 1;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(24px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes glowPulse {
+  0%, 100% {
+    box-shadow: 0 0 8px var(--gold);
+  }
+  50% {
+    box-shadow: 0 0 22px var(--gold), 0 0 44px #f7a90240;
+  }
+}
+
+.header-card {
+  background-image: linear-gradient(#000000, #393320) !important;
+  border: 2px solid var(--gold) !important;
+  border-radius: 20px !important;
+  color: var(--gold) !important;
+  animation: glowPulse 3s ease-in-out infinite, fadeInUp 0.5s ease forwards;
+  transition: transform 0.3s ease;
+}
+
+.header-card:hover {
+  transform: translateY(-4px);
+}
+
+.titulo-header {
+  font-size: 20px;
+  color: var(--gold);
+  margin: 0;
+}
+
+.nome {
+  font-size: 40px;
+  letter-spacing: 2px;
+  color: var(--gold);
+  padding: 10px;
+  margin: 20px 0;
+}
+
+.titulo-profissional {
+  font-size: 25px;
+  color: var(--gold);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  margin: 0;
+}
+
+.header-divider {
+  border-color: var(--gold);
+  opacity: 1;
+  width: 80%;
+  margin: 12px auto;
+}
+
+.secao-card {
+  background-image: linear-gradient(var(--gray-card), black) !important;
+  border: 1px solid var(--gold) !important;
+  border-radius: 12px !important;
+  color: var(--gold) !important;
+  margin-bottom: 1rem;
+  animation: fadeInUp 0.6s ease forwards;
+  opacity: 0;
+}
+
+.delay-1 { animation-delay: 0.15s; }
+.delay-2 { animation-delay: 0.35s; }
+.delay-3 { animation-delay: 0.55s; }
+
+.titulo-secao {
+  border: 1px solid #ffd900;
+  border-radius: 20px;
+  padding: 4px 14px;
+  display: inline-block;
+  font-family: Cambria, Georgia, serif;
+  color: var(--gold);
+  transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.titulo-secao:hover {
+  transform: translateY(-4px);
+  filter: brightness(1.3);
+}
+
+.texto-sobre {
+  line-height: 1.7;
+  font-size: 18px;
+  color: var(--gold);
+  margin: 0;
+}
+
+.skills-wrapper {
+  animation: fadeInUp 0.6s ease 0.30s forwards;
+  opacity: 0;
+  margin-bottom: 1rem;
+}
+
+.conhecimento-card {
+  background-image: linear-gradient(#000000, #393320) !important;
+  border: 1px solid var(--gold) !important;
+  border-radius: 12px !important;
+  color: var(--gold) !important;
+  transition: transform 0.3s ease;
+  height: 100%;
+}
+
+.conhecimento-card:hover {
+  transform: translateY(-4px);
+}
+
+.lista-conhecimentos {
+  list-style: none;
+  padding: 0;
+  line-height: 2.2;
+  font-size: 18px;
+  margin: 0;
+}
+
+.lista-conhecimentos li::before {
+  content: "▹ ";
+  color: var(--gold);
+}
+
+.tabela-projetos {
+  width: 100%;
+  border-collapse: collapse;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 18px;
+}
+
+.tabela-projetos th,
+.tabela-projetos td {
+  padding: 0.75rem 1rem;
+  text-align: center;
+  border: 1px solid var(--gold);
+  color: var(--gold);
+}
+
+.tabela-projetos thead tr {
+  background-image: linear-gradient(#000000, #393320);
+  font-family: Cambria, Georgia, serif;
+  font-weight: bold;
+}
+
+.tabela-projetos tbody tr {
+  background-image: linear-gradient(var(--gray-card), black);
+  transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.tabela-projetos tbody tr:hover {
+  transform: translateY(-2px);
+  filter: brightness(1.3);
+}
+
+.contatos-wrapper {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+  padding: 1rem 0;
+}
+
+.contato-link {
+  text-decoration: none;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  color: var(--gold);
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.contato-link:hover {
+  transform: translateY(-5px);
+}
+
+.contato-link.github:hover  { color: #b0b0a0; }
+.contato-link.whatsapp:hover { color: rgb(6, 186, 6); }
+.contato-link.linkedin:hover { color: #0077b5; }
+.contato-link.email:hover    { color: rgb(14, 135, 119); }
+
+.footer-text {
+  font-size: 14px;
+  color: var(--gold);
+  opacity: 0.7;
+  text-align: center;
+  padding: 10px 0;
+  margin: 0;
+}
