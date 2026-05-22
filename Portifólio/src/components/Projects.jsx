@@ -12,6 +12,21 @@ const projetos = [
     descricao: 'Landing page com HTML, CSS e JavaScript',
     ano: 2026,
   },
+  {
+    nome: 'Convite Daniel e Brenda',
+    descricao: 'Convite digital de casamento com HTML, CSS e JavaScript',
+    ano: 2026,
+  },
+  {
+    nome: 'Joab Kids Market',
+    descricao: 'E-commerce de roupas e calçados infantis com React, Vite e Bootstrap — em andamento',
+    ano: 2026,
+  },
+  {
+    nome: 'UniSas',
+    descricao: 'Sistema full-stack com React e Vite no frontend e Node.js, Express e Supabase no backend — em andamento',
+    ano: 2026,
+  },
 ]
 
 function Projects() {

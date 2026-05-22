@@ -8,10 +8,11 @@ function About() {
         <FaRegUser /> Sobre mim
       </h2>
       <p className="texto-sobre">
-        Sou estudante de Análise e Desenvolvimento de Sistemas da Universidade de Fortaleza e estou
-        no terceiro semestre do curso. Atualmente tenho conhecimento em Java, JavaScript, HTML e CSS.
-        Além de ferramentas como Netlify para deploy de projetos, versionamento de código com o Git
-        e o Postman para testes e requisições.
+        Sou estudante de Análise e Desenvolvimento de Sistemas da Universidade de Fortaleza.
+        Tenho conhecimento em Java, JavaScript, HTML, CSS e React, com experiência em desenvolvimento
+        frontend utilizando React e Vite, e desenvolvimento backend com Node.js e Express.
+        Além de ferramentas como Netlify para deploy de projetos, Git para versionamento,
+        Supabase como banco de dados e Postman para testes e requisições de API.
       </p>
     </Card>
   )

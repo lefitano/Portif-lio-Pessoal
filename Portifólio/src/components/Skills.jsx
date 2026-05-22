@@ -1,8 +1,8 @@
 import { Row, Col, Card } from 'react-bootstrap'
 import { FaBook } from 'react-icons/fa'
 
-const linguagens = ['Java', 'JavaScript', 'HTML', 'CSS']
-const ferramentas = ['Netlify', 'Git', 'Supabase', 'Postman']
+const linguagens = ['Java', 'JavaScript', 'HTML', 'CSS', 'React']
+const ferramentas = ['Netlify', 'Git', 'Supabase', 'Postman', 'Node.js', 'Vite']
 
 function Skills() {
   return (
